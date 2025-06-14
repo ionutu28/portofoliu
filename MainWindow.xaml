@@ -1,0 +1,48 @@
+﻿<Window x:Class="Tetris_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tetris_"
+        mc:Ignorable="d"
+        Title="Meniu" 
+        Height="550" Width="450"
+        Top="200" Left="700"
+       WindowStartupLocation="CenterScreen"
+        >
+    <Grid Background="#FF320D0D" Margin="0,0,0,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="434*"/>
+            <ColumnDefinition Width="17*"/>
+        </Grid.ColumnDefinitions>
+        <Image Margin="20,0,19,7" Stretch="Fill" Source="/menu.png"/>
+        <Button Content="Start" Background="#FF98DA23" Visibility="Visible" FontSize="24" FontFamily="Bahnschrift SemiBold" Click="Button_Click_1" Margin="88,82,88,361">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+        </Button>
+        <Button Content="Exit" Background="#FFDA2323" Visibility="Visible" FontSize="24" FontFamily="Bahnschrift SemiBold" Click="Button_Exit" Margin="88,374,79,68">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+        </Button>
+        <Button Content="Options" Background="#FF189393" Visibility="Visible" FontSize="24" FontFamily="Bahnschrift SemiBold" Margin="88,222,87,221" Click="Button_Opt">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+        </Button>
+
+    </Grid>
+</Window>
